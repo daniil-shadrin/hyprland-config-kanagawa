@@ -1,0 +1,32 @@
+{
+  "style": "~/.config/waybar/style.css",
+  
+  "layer": "top",
+  "position": "top",
+  //"height": 40,
+  
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces"
+  ],
+  
+  "modules-center": [
+    //"mpris",
+    "custom/cava" 
+  ],
+  
+  "modules-right": [
+    "cpu",
+    "memory",
+    "battery",
+    "hyprland/language",
+    "backlight",
+    "pulseaudio",
+    "network",
+    "clock",
+    "custom/notification",
+    "custom/power"
+  ],
+
+  "include": "~/.config/waybar/modules.jsonc"
+}

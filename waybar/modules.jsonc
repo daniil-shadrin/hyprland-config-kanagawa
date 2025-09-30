@@ -1,0 +1,153 @@
+{
+  // Launcher
+  "custom/launcher": {
+    "format": "",
+    "on-click": "wofi --show drun",
+    "tooltip": false
+  },
+
+  // Power
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wlogout -p layer-shell &",
+    "format": "⏻",
+  },
+
+  // Workspaces (Hyprland)
+  "hyprland/workspaces": {
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    }
+  },
+  
+  // CAVA Audio Visualizer
+  "custom/cava": {
+    "exec": "~/.config/waybar/scripts/cava.sh",
+    "format": "{}"
+  },
+
+  // Memory / CPU / Temp
+  "memory": {
+    "format": "<span color='#7E9CD8'> </span>{}%",
+    "on-click": "neohtop"
+  },
+  "cpu": {
+    "format": "<span color='#7E9CD8'> </span>{usage}%",
+    "on-click": "neohtop"
+  },
+
+  // Battery
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}{capacity}%",
+    "format-icons": [
+      "<span color='#E82424'> </span>",
+      "<span color='#E46876'> </span>",
+      "<span color='#E6C384'> </span>",
+      "<span color='#76946A'> </span>",
+      "<span color='#98BB6C'> </span>"
+    ]
+  },
+
+  // Language (Hyprland)
+  "hyprland/language": {
+    "format": "󰌌 {short}"
+  },
+
+  // Backlight
+  "backlight": {
+    "on-scroll-down": "brightnessctl set 5%-",
+    "on-scroll-up": "brightnessctl set +5%",
+    "format": "{icon}{percent}%",
+    "tooltip": false,
+    "format-icons": [
+      "<span color='#696969'>󰃞 </span>",
+      "<span color='#A9A9A9'>󰃝 </span>",
+      "<span color='#FFFF66'>󰃟 </span>",
+      "<span color='#FFD700'>󰃠 </span>"
+    ]
+  },
+
+  // Audio
+  "pulseaudio": {
+    "format": "{icon}{volume}%",
+    "format-muted": "  muted",
+    "format-icons": {
+      "headphone": "<span color='#D27E99'> </span>",
+      "default": [" ", " ", " "],
+    },
+    "on-click": "pavucontrol",
+  },
+  // Network
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "<span color='#957FB8'> </span>{signalStrength}%",
+    "format-ethernet": "  {ifname}",
+    "format-disconnected": "Disconnected ⚠",
+    "tooltip-format": " {ifname} via {gwaddri}",
+    "tooltip-format-wifi": " {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click-right": "nm-connection-editor"
+  },
+
+  // Clock
+  "clock": {
+    "format": "<span color='#FF9E3B'> </span>{:%H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+  },
+  // Notifications (SwayNC)
+  "custom/notification": {
+    "tooltip-format": "Left: Notifications\nRight: Do not disturb",
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "none": "",
+      "dnd-notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  // Tray
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+    "show-passive-items": true,
+    "reverse-direction": false,
+    "smooth-scrolling-threshold": 1.0
+  }
+}
