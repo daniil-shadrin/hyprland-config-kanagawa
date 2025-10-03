@@ -3,28 +3,25 @@
   
   "layer": "top",
   "position": "top",
-  //"height": 40,
   
   "modules-left": [
-    "custom/launcher",
+    //"custom/launcher",
     "hyprland/workspaces"
   ],
   
   "modules-center": [
-    //"mpris",
-    "custom/cava" 
+    //"custom/cava",
+    "clock" 
   ],
   
   "modules-right": [
-    "cpu",
-    "memory",
+    //"cpu",
+    //"memory",
     "battery",
-    "hyprland/language",
     "backlight",
     "pulseaudio",
-    "network",
-    "clock",
-    "custom/notification",
+    "hyprland/language",
+    "tray",
     "custom/power"
   ],
 

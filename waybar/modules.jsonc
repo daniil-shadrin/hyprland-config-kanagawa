@@ -10,7 +10,7 @@
   "custom/power": {
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
-    "format": "⏻",
+    "format": "⏻"
   },
 
   // Workspaces (Hyprland)
@@ -84,28 +84,15 @@
     "format": "{icon}{volume}%",
     "format-muted": "  muted",
     "format-icons": {
-      "headphone": "<span color='#D27E99'> </span>",
-      "default": [" ", " ", " "],
+      "headphone": " ",
+      "default": [" ", " ", " "]
     },
-    "on-click": "pavucontrol",
-  },
-  // Network
-  "network": {
-    "format": "{ifname}",
-    "format-wifi": "<span color='#957FB8'> </span>{signalStrength}%",
-    "format-ethernet": "  {ifname}",
-    "format-disconnected": "Disconnected ⚠",
-    "tooltip-format": " {ifname} via {gwaddri}",
-    "tooltip-format-wifi": " {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
-    "on-click-right": "nm-connection-editor"
-  },
+    "on-click": "pavucontrol"
+   },
 
   // Clock
   "clock": {
-    "format": "<span color='#FF9E3B'> </span>{:%H:%M}",
+    "format": "<span color='#FFA066'> </span>{:%H:%M}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode": "month",
@@ -113,12 +100,12 @@
       "on-scroll": 1,
       "format": {
         "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "days": "<span color='#dcd7ba'><b>{}</b></span>",
         "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
         "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
       }
-    },
+    }
   },
   // Notifications (SwayNC)
   "custom/notification": {
