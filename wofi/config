@@ -1,0 +1,8 @@
+mode=drun
+insensitive=true
+prompt=
+normal_window=true
+no_actions=true
+allow_images=true
+height=400
+width=600
