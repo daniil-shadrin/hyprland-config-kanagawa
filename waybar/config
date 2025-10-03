@@ -15,8 +15,8 @@
   ],
   
   "modules-right": [
-    //"cpu",
-    //"memory",
+    "cpu",
+    "memory",
     "battery",
     "backlight",
     "pulseaudio",
