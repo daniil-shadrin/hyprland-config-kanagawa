@@ -17,9 +17,9 @@
   "modules-right": [
     "cpu",
     "memory",
-    "battery",
     "backlight",
     "pulseaudio",
+    "battery",
     "hyprland/language",
     "tray",
     "custom/power"
