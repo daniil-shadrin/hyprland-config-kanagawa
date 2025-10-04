@@ -16,7 +16,7 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #181825;
+  background-color: #181818;
   color: #dcd7ba;
 }
 
@@ -27,7 +27,11 @@ window#waybar {
 
 #workspaces button.active {
   color: #ffa066;
-  background-color: #181825;
+  background-color: #181818;
+}
+
+#workspaces button.active:hover {
+  color: #181818;
 }
 
 #clock,
@@ -48,7 +52,7 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #181825;
+  background-color: #181818;
 }
 
 #custom-launcher {
@@ -80,6 +84,6 @@ window#waybar.empty #window {
 }
 
 tooltip {
-  background-color: #181825;
+  background-color: #181818;
   border: 2px solid #c8c093;
 }
