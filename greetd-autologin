@@ -1,0 +1,8 @@
+sudo vim /etc/greetd/config.toml
+
+[initial_session]
+command = "hyprland"
+user = "daniil-shadrin"
+
+sudo systemctl enable greetd.service
+sudo systemctl start greetd.service
