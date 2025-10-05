@@ -5,12 +5,10 @@
   "position": "top",
   
   "modules-left": [
-    //"custom/launcher",
     "hyprland/workspaces"
   ],
   
   "modules-center": [
-    //"custom/cava",
     "clock" 
   ],
   
