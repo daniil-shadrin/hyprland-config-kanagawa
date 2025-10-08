@@ -1,3 +1,5 @@
+@import "../theme/theme-colors.css";
+
 * {
   background-image: none;
   box-shadow: none;
@@ -6,7 +8,7 @@
 }
 
 window {
-  background-color: rgba(18, 18, 18, 0.5);
+  background-color: @customBlack;
 }
 
 button {
