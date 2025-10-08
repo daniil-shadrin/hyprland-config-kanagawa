@@ -13,11 +13,11 @@
   ],
   
   "modules-right": [
-    "cpu",
-    "memory",
+    //"cpu",
+    //"memory",
     "backlight",
-    "pulseaudio",
     "battery",
+    "pulseaudio",
     "hyprland/language",
     "tray",
     "custom/power"

@@ -50,7 +50,7 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon}{capacity}%",
+    "format": "{icon}{capacity}",
     "format-icons": [
       "<span color='#E82424'> </span>",
       "<span color='#E46876'> </span>",
@@ -69,7 +69,7 @@
   "backlight": {
     "on-scroll-down": "brightnessctl set 5%-",
     "on-scroll-up": "brightnessctl set +5%",
-    "format": "{icon}{percent}%",
+    "format": "{icon}{percent}",
     "tooltip": false,
     "format-icons": [
       "<span color='#696969'>󰃞 </span>",
@@ -81,7 +81,7 @@
 
   // Audio
   "pulseaudio": {
-    "format": "{icon}{volume}%",
+    "format": "{icon}{volume}",
     "format-muted": "  muted",
     "format-icons": {
       "headphone": " ",

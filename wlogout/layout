@@ -1,0 +1,19 @@
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Выход",
+    "keybind" : "l"
+},
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Сон",
+    "keybind" : "u"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Выключение",
+    "keybind" : "p"
+}
+

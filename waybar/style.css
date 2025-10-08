@@ -1,7 +1,9 @@
+@import "../theme/theme-colors.css";
+
 * {
   min-height: 0;
   min-width: 0;
-  font-family: "JetBrainsMono NFP";
+  font-family: "JetBrains Mono NFP";
   font-size: 14px;
   font-weight: 600;
 }
@@ -16,18 +18,18 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #181818;
-  color: #dcd7ba;
+  background-color: @customBlack;
+  color: @fujiWhite;
 }
 
 #workspaces button:hover {
-  color: #181818;
-  background-color: #e6c384;
+  color: @customBlack;
+  background-color: @carpYellow;
 }
 
 #workspaces button.active {
-  color: #ffa066;
-  background-color: #181818;
+  color: @oniViolet;
+  background-color: @customBlack;
 }
 
 #clock,
@@ -48,11 +50,11 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  background-color: #181818;
+  background-color: @customBlack;
 }
 
 #custom-launcher {
-  color: #ffa066;
+  color: @surimiOrange;
 }
 
 #mpris.playing {
@@ -72,14 +74,14 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-  color: #a6adc8;
+  color: @katanaGray;
 }
 
 #custom-power {
-  color: #ff5d62;
+  color: @peachRed;
 }
 
 tooltip {
-  background-color: #181818;
-  border: 2px solid #c8c093;
+  background-color: @customBlack;
+  border: 2px solid @oldWhite;
 }
