@@ -82,7 +82,7 @@
   // Audio
   "pulseaudio": {
     "format": "{icon}{volume}",
-    "format-muted": "  muted",
+    "format-muted": " muted",
     "format-icons": {
       "headphone": " ",
       "default": [" ", " ", " "]

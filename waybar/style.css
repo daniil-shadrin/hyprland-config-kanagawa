@@ -15,8 +15,9 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.6rem;
+  margin: 0.25rem;
+  margin-right: 0.1rem; 
   border-radius: 6px;
   background-color: @customBlack;
   color: @fujiWhite;
@@ -47,8 +48,8 @@ window#waybar {
 #battery,
 #backlight,
 #network {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
+  padding: 0.2rem 0.6rem;
+  margin: 0.25rem;
   border-radius: 6px;
   background-color: @customBlack;
 }
@@ -75,6 +76,10 @@ window#waybar.empty #window {
 
 #pulseaudio.muted {
   color: @katanaGray;
+}
+
+#tray {
+  padding: 0.2rem 0.3rem;
 }
 
 #custom-power {
