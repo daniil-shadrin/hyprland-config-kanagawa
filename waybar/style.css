@@ -4,7 +4,7 @@
   min-height: 0;
   min-width: 0;
   font-family: "JetBrains Mono NFP";
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -24,7 +24,7 @@ window#waybar {
 
 #workspaces button:hover {
   color: @customBlack;
-  background-color: @carpYellow;
+  background-color: @oniViolet;
 }
 
 #workspaces button.active {
@@ -70,7 +70,7 @@ window#waybar.empty #window {
 }
 
 #window {
-  color: #cdd6f4;
+  color: @oniViolet;
 }
 
 #pulseaudio.muted {
