@@ -63,7 +63,7 @@ window#waybar {
 }
 
 #mpris.paused {
-  color: @fujiGray;
+  color: @katanaGray;
 }
 
 window#waybar.empty #window {
