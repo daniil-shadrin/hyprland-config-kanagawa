@@ -59,11 +59,11 @@ window#waybar {
 }
 
 #mpris.playing {
-  color: #a6e3a1;
+  color: @oniViolet;
 }
 
 #mpris.paused {
-  color: #9399b2;
+  color: @fujiGray;
 }
 
 window#waybar.empty #window {

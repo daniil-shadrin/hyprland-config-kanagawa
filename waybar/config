@@ -9,12 +9,13 @@
   ],
   
   "modules-center": [
-    "clock" 
+    "mpris"
   ],
   
   "modules-right": [
     //"cpu",
     //"memory",
+    "clock",
     "backlight",
     "battery",
     "pulseaudio",

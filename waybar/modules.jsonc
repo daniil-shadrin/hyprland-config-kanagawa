@@ -90,6 +90,11 @@
     "on-click": "pavucontrol"
    },
 
+  "mpris": {
+    "format": "♫ {dynamic}",
+    "dynamic-order": ["artist", "title"]
+  },
+
   // Clock
   "clock": {
     "format": " {:%H:%M}",
