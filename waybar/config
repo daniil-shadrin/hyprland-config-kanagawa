@@ -13,8 +13,6 @@
   ],
   
   "modules-right": [
-    //"cpu",
-    //"memory",
     "clock",
     "backlight",
     "battery",

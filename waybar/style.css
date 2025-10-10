@@ -79,7 +79,7 @@ window#waybar.empty #window {
 }
 
 #tray {
-  padding: 0.2rem 0.3rem;
+  padding: 0.2rem 0.5rem;
 }
 
 #custom-power {

@@ -2,6 +2,9 @@
 @define-color customBlack90 rgba(24, 24, 24, .9);
 @define-color customBlack80 rgba(24, 24, 24, .8);
 @define-color customBlack50 rgba(24, 24, 24, .5);
+@define-color oniViolet90 rgba(149, 127, 184, .9);
+@define-color oniViolet80 rgba(149, 127, 184, .8);
+@define-color oniViolet50 rgba(149, 127, 184, 0.5);
 
 @define-color fujiWhite #dcd7ba;
 @define-color oldWhite #c8c093;
